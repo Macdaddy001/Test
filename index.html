@@ -36,11 +36,10 @@ if(this.el.object3D.visible == true){
   </div>
   <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180' >
     <a-assets>
-
+      <video id="vid" src="https://github.com/Macdaddy001/Artesting/blob/gh-pages/MARVEL.mp4" loop="true" crossorigin>
     </a-assets>
    
     <a-marker id="memarker" preset="hiro" vidhandler>
-           <a-image src="https://macdaddy001.github.io/Test/733760_0.jpg" ></a-image>
       <a-plane position='1 2 -2' scale="2 2 2" width="2" rotation="-90 0 0" material='transparent:true;opacity: 0.7;src:#vid'></a-plane>
     </a-marker>
 
@@ -49,3 +48,4 @@ if(this.el.object3D.visible == true){
 
 
 </html>
+
